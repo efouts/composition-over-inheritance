@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1 InheritanceExercise", "InheritanceExercise\1 InheritanceExercise.csproj", "{7E027948-1DDA-4896-B5D7-30F3E5C7EEB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2 InheritanceExerciseComplete", "InheritanceExerciseComplete\2 InheritanceExerciseComplete.csproj", "{3C2CC0A9-55BC-4E84-9C17-C709D0BE4DC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3 CompositionExercise", "CompositionExercise\3 CompositionExercise.csproj", "{01A0A3B5-DA36-4A33-AF49-332097B04DFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4 CompositionExerciseComplete", "CompositionExerciseComplete\4 CompositionExerciseComplete.csproj", "{66BC4413-ACF8-4676-9482-A7CF243F651D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0E89C9A5-95DC-42BA-89F2-EB9CE38032E2}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0 PolymorphismExercise", "PolymorphismExercise\0 PolymorphismExercise.csproj", "{4B9BC50A-F10F-45F4-AAB2-A8D2514427FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E027948-1DDA-4896-B5D7-30F3E5C7EEB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E027948-1DDA-4896-B5D7-30F3E5C7EEB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E027948-1DDA-4896-B5D7-30F3E5C7EEB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E027948-1DDA-4896-B5D7-30F3E5C7EEB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C2CC0A9-55BC-4E84-9C17-C709D0BE4DC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C2CC0A9-55BC-4E84-9C17-C709D0BE4DC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C2CC0A9-55BC-4E84-9C17-C709D0BE4DC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C2CC0A9-55BC-4E84-9C17-C709D0BE4DC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01A0A3B5-DA36-4A33-AF49-332097B04DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01A0A3B5-DA36-4A33-AF49-332097B04DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01A0A3B5-DA36-4A33-AF49-332097B04DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01A0A3B5-DA36-4A33-AF49-332097B04DFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66BC4413-ACF8-4676-9482-A7CF243F651D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66BC4413-ACF8-4676-9482-A7CF243F651D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66BC4413-ACF8-4676-9482-A7CF243F651D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66BC4413-ACF8-4676-9482-A7CF243F651D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B9BC50A-F10F-45F4-AAB2-A8D2514427FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B9BC50A-F10F-45F4-AAB2-A8D2514427FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B9BC50A-F10F-45F4-AAB2-A8D2514427FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B9BC50A-F10F-45F4-AAB2-A8D2514427FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
