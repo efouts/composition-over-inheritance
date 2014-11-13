@@ -18,7 +18,7 @@ namespace InheritanceExercise.Tests
             service = new AccountCreationDuplicateValidationService(store);
         }
 
-        [TestMethod, ExpectedException(typeof(ArgumentException))]
+        [TestMethod, Ignore, ExpectedException(typeof(ArgumentException))]
         public void CannotCreateDuplicateAccounts()
         {
             var emailAddress = "duplicate@gmail.com";

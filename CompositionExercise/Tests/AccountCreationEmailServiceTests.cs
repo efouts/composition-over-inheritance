@@ -21,7 +21,7 @@ namespace CompositionExercise.Tests
             service = new AccountCreationEmailService(mockInnerService.Object, emailer);
         }
 
-        [TestMethod]
+        [TestMethod, Ignore]
         public void ForwardsToInnerService()
         {
             var emailAddress = "someAddress@gmail.com";
@@ -29,7 +29,7 @@ namespace CompositionExercise.Tests
             mockInnerService.Verify(v => v.CreateAccount(emailAddress));
         }
 
-        [TestMethod]
+        [TestMethod, Ignore]
         public void SendsWelcomeMessageOnAccountCreation()
         {
             var emailAddress = "someAddress@gmail.com";

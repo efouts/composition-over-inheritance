@@ -1,20 +1,21 @@
 ﻿using System;
-using InheritanceExercise.Lib;
+using CompositionExercise.Lib;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
 
-namespace InheritanceExercise.Tests
+namespace CompositionExercise.Tests
 {
     [TestClass]
     public class AccountCreationFormatValidationServiceTests 
     {
-        private InMemoryAccountStore store;
+        private Mock<IAccountCreationService> mockInnerService;
         private AccountCreationFormatValidationService service;
 
         [TestInitialize]
         public void Setup()
         {
-            store = new InMemoryAccountStore();
-            service = new AccountCreationFormatValidationService(store);
+            mockInnerService = new Mock<IAccountCreationService>();
+            service = new AccountCreationFormatValidationService(mockInnerService.Object);
         }
 
         [TestMethod, Ignore, ExpectedException(typeof(FormatException))]
@@ -24,6 +25,11 @@ namespace InheritanceExercise.Tests
             service.CreateAccount(emailAddress);
         }
 
-        // Add more tests here...
+        [TestMethod, Ignore]
+        public void CorrectEmailFormat()
+        {
+            var emailAddress = "EmailAddress@google.com";
+            service.CreateAccount(emailAddress);
+        }
     }
 }

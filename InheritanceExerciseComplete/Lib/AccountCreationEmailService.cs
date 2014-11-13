@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace InheritanceExerciseComplete.Lib
 {
-    public class AccountCreationEmailService : AccountCreationService
+    public class AccountCreationEmailService : AccountCreationFormatValidationService
     {
         private IEmailer emailer;
 

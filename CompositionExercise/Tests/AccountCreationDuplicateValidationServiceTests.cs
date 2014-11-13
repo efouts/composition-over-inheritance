@@ -21,7 +21,7 @@ namespace CompositionExercise.Tests
             service = new AccountCreationDuplicateValidationService(mockInnerService.Object, store);
         }
 
-        [TestMethod]
+        [TestMethod, Ignore]
         public void ForwardsToInnerService()
         {
             var emailAddress = "someAddress@gmail.com";
@@ -29,7 +29,7 @@ namespace CompositionExercise.Tests
             mockInnerService.Verify(v => v.CreateAccount(emailAddress));
         }
 
-        [TestMethod, ExpectedException(typeof(ArgumentException))]
+        [TestMethod, Ignore, ExpectedException(typeof(ArgumentException))]
         public void CannotCreateDuplicateAccounts()
         {
             var emailAddress = "duplicate@gmail.com";

@@ -25,7 +25,5 @@ namespace InheritanceExerciseComplete.Tests
             service.CreateAccount(emailAddress);
             service.CreateAccount(emailAddress);
         }
-
-        // Add more tests here...
     }
 }

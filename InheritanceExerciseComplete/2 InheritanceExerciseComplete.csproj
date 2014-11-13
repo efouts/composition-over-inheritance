@@ -52,14 +52,17 @@
   <ItemGroup>
     <Compile Include="Lib\AccountCreationDuplicateValidationService.cs" />
     <Compile Include="Lib\AccountCreationEmailService.cs" />
+    <Compile Include="Lib\AccountCreationFormatValidationService.cs" />
     <Compile Include="Lib\AccountCreationService.cs" />
     <Compile Include="Lib\IAccountStore.cs" />
     <Compile Include="Lib\IEmailer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\AccountCreationDuplicateValidationServiceTests.cs" />
     <Compile Include="Tests\AccountCreationEmailServiceTests.cs" />
+    <Compile Include="Tests\AccountCreationFormatValidationServiceTests.cs" />
     <Compile Include="Tests\AccountCreationServiceTests.cs" />
     <Compile Include="Tests\FakeEmailer.cs" />
+    <Compile Include="Tests\FullStackTests.cs" />
     <Compile Include="Tests\InMemoryAccountStore.cs" />
   </ItemGroup>
   <Choose>

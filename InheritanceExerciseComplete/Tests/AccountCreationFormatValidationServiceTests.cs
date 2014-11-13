@@ -1,8 +1,8 @@
 ﻿using System;
-using InheritanceExercise.Lib;
+using InheritanceExerciseComplete.Lib;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace InheritanceExercise.Tests
+namespace InheritanceExerciseComplete.Tests
 {
     [TestClass]
     public class AccountCreationFormatValidationServiceTests 
@@ -17,13 +17,18 @@ namespace InheritanceExercise.Tests
             service = new AccountCreationFormatValidationService(store);
         }
 
-        [TestMethod, Ignore, ExpectedException(typeof(FormatException))]
+        [TestMethod, ExpectedException(typeof(FormatException))]
         public void CannotCreateAccountsWithIncorrectlyFormattedEmailAddresses()
         {
             var emailAddress = "EmailAddress";
             service.CreateAccount(emailAddress);
         }
 
-        // Add more tests here...
+        [TestMethod]
+        public void CorrectEmailFormat()
+        {
+            var emailAddress = "EmailAddress@google.com";
+            service.CreateAccount(emailAddress);
+        }
     }
 }

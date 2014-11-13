@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CompositionExerciseComplete.Tests
 {
     [TestClass]
-    public class AccountCreationServiceFactoryTests
+    public class FullStackTests
     {
         private IAccountStore store;
         private IAccountCreationService service;
@@ -15,7 +15,7 @@ namespace CompositionExerciseComplete.Tests
             // Create the account creation object using all the composed objects
         }
 
-        [TestMethod]
+        [TestMethod, Ignore]
         public void IntegrationTestExample()
         {
             var emailAddress = "someAddress@gmail.com";

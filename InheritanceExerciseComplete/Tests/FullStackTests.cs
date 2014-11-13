@@ -1,16 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using InheritanceExerciseComplete.Lib;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace InheritanceExerciseComplete.Tests
 {
     [TestClass]
-    public class AccountCreationEmailServiceTests
+    public class FullStackTests
     {
-        private InMemoryAccountStore store;
-        private FakeEmailer emailer;
-        private AccountCreationEmailService service;
+        private IAccountStore store;
+        private IEmailer emailer;
+        private AccountCreationService service;
 
         [TestInitialize]
         public void Setup()
@@ -21,11 +24,9 @@ namespace InheritanceExerciseComplete.Tests
         }
 
         [TestMethod]
-        public void SendsWelcomeMessageOnAccountCreation()
+        public void CreateAccount()
         {
-            var emailAddress = "someAddress";
-            service.CreateAccount(emailAddress);
-            Assert.IsTrue(emailer.MessageWasSentTo(emailAddress));
+            service.CreateAccount("myEmail@gmail.com");
         }
     }
 }

@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace InheritanceExercise.Lib
+﻿namespace InheritanceExercise.Lib
 {
-    public class AccountCreationFormatValidationService : AccountCreationService
+    public class AccountCreationFormatValidationService : AccountCreationDuplicateValidationService
     {
         public AccountCreationFormatValidationService(IAccountStore store)
             : base(store)
